@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 public class CashbackHackServiceTest {
 
     @Test
-    public void Test1() {
+    public void shouldBuy100() {
         CashbackHackService service = new CashbackHackService();
         int actual = service.remain(900);
 
@@ -16,7 +16,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    public void Test2() {
+    public void shouldBuy0() {
         CashbackHackService service = new CashbackHackService();
         int actual = service.remain(1000);
 
